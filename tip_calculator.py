@@ -16,6 +16,7 @@ total_amount = tip_amount + bill_amount
 num_of_people = input('How many people are eating?\n')
 
 amount_per_person = round(total_amount/int(num_of_people), 2)
+amount_per_person = "{:.2f}".format(amount_per_person)
 
 # Print result
 print(f"Each person should pay: ${amount_per_person}")
